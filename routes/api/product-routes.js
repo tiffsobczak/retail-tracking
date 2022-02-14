@@ -74,7 +74,10 @@ router.post('/', (req, res) => {
             const productTagIdArr = req.body.tagIds.map((tag_id) => {
                 return {product_id: product.id, tag_id};
             });
-            return ProductTag.bulkCreate(productTagIdArr);
+            return ProductTag.bulkCreate(productTagIdArr)
+            .then (()=>{
+                 res.status(200).json(product);
+            })
         }
         // if no product tags, just respond
         res.status(200).json(product);
