@@ -7,3 +7,6 @@ A back end to assist e-commerce websites that uses the latest tech to complete w
 * HTML
 * JavaScript
 * Node.JS
+
+## Video Walk Through 
+https://youtu.be/rhsKuZFBvEs
